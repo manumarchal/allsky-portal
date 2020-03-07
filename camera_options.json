@@ -237,15 +237,15 @@
 },
 {
 "name":"latitude",
-"default":"60.7N",
-"description":"Latitude of the camera. Needs a number (0 to 90) and direction (N or S). Ex: 60.7N",
+"default":"51.28N",
+"description":"Latitude of the camera. Needs a number (0 to 90) and direction (N or S). Ex: 51.28N",
 "label":"Latitude",
 "type":"text"
 },
 {
 "name":"longitude",
-"default":"135.05W",
-"description":"Longitude of the camera. Needs a number (0 to 180) and direction (E or W). Ex: 135.05W",
+"default":"0.18E",
+"description":"Longitude of the camera. Needs a number (0 to 180) and direction (E or W). Ex: 0.18E",
 "label":"Longitude",
 "type":"text"
 },

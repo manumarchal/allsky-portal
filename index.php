@@ -138,7 +138,7 @@ $csrf_token = $_SESSION['csrf_token'];
               <li>
                 <a href="index.php?page=wlan0_info"><i class="fa fa-tachometer-alt fa-fw"></i> Connection Status</a>
               </li>
-	      <li>
+			  <li>
                 <a href="index.php?page=camera_conf"><i class="fa fa-camera fa-fw"></i> Camera Settings</a>
               </li>
               <li>
@@ -169,8 +169,11 @@ $csrf_token = $_SESSION['csrf_token'];
               <li>
                  <a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a>
               </li>
-	      <li>
+			  <li>
                  <span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span>
+              </li>
+              <li>
+                <a href="index.php?page=sky_map"><i class="fa fa-sky fa-fw"></i> Sky Map</a>
               </li>
 
           </ul>
@@ -187,19 +190,19 @@ $csrf_token = $_SESSION['csrf_token'];
 	  case "live_view":
             DisplayLiveView();
             break;
-          case "wlan0_info":
+	  case "wlan0_info":
             DisplayDashboard();
             break;
 	  case "camera_conf":
             DisplayCameraConfig();
             break;
-          case "wpa_conf":
+      case "wpa_conf":
             DisplayWPAConfig();
             break;
-          case "auth_conf":
+      case "auth_conf":
             DisplayAuthConfig($config['admin_user'], $config['admin_pass']);
             break;
-          case "system_info":
+      case "system_info":
             DisplaySystem();
             break;
 	  case "list_days":
@@ -208,9 +211,12 @@ $csrf_token = $_SESSION['csrf_token'];
 	  case "list_images":
             ListImages();
             break;
-          case "list_videos":
+      case "list_videos":
             ListVideos();
             break;
+      case "sky_map":
+            DisplaySkyMap();
+            break;	  
 	  case "list_keograms":
             ListKeograms();
             break;
