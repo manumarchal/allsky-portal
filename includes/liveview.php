@@ -12,13 +12,19 @@ function DisplayLiveView(){
   }
 
   ?>
-
   <div class="row">
-	<p><?php $status->showMessages(); ?></p>
-	<div id="live_container" style="background-color: black;">
-      	<img id="current" class="current" src="current/liveview-<?php echo $camera_settings_array['filename'] ?>" style="height:100%">
-  	</div>
-  </div>
+    <div class="col-lg-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><i class="fa fa-star fa-fw"></i>Local sky</div>
+        <div class="panel-body">
+			<p><?php $status->showMessages(); ?></p>
+			<div id="live_container" style="background-color: black;">
+      			<img id="current" class="current" src="current/liveview-<?php echo $camera_settings_array['filename'] ?>" style="height:500; width:100%">
+  			</div>
+        </div><!-- /.panel-body -->
+      </div><!-- /.panel-default -->
+    </div><!-- /.col-lg-12 -->
+  </div><!-- /.row -->  
   <?php 
 }
 

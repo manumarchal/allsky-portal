@@ -137,6 +137,9 @@ $csrf_token = $_SESSION['csrf_token'];
                 <a href="index.php?page=live_view"><i class="fa fa-eye fa-fw"></i> Live View</a>
               </li>
               <li>
+                <a href="index.php?page=sky_map"><i class="fa fa-star fa-fw"></i> Sky Map</a>
+              </li>
+              <li>
                 <a href="index.php?page=wlan0_info"><i class="fa fa-tachometer-alt fa-fw"></i> Connection Status</a>
               </li>
 			  <li>
@@ -173,10 +176,6 @@ $csrf_token = $_SESSION['csrf_token'];
 			  <li>
                  <span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span>
               </li>
-              <li>
-                <a href="index.php?page=sky_map"><i class="fa fa-star fa-fw"></i> Sky Map</a>
-              </li>
-
           </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.navbar-default -->
@@ -190,6 +189,9 @@ $csrf_token = $_SESSION['csrf_token'];
         switch( $page ) {
 	  case "live_view":
             DisplayLiveView();
+            break;
+      case "sky_map":
+            DisplaySkyMap();
             break;
 	  case "wlan0_info":
             DisplayDashboard();
@@ -215,9 +217,6 @@ $csrf_token = $_SESSION['csrf_token'];
       case "list_videos":
             ListVideos();
             break;
-      case "sky_map":
-            DisplaySkyMap();
-            break;	  
 	  case "list_keograms":
             ListKeograms();
             break;
