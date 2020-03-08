@@ -174,7 +174,7 @@ $csrf_token = $_SESSION['csrf_token'];
                  <span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span>
               </li>
               <li>
-                <a href="index.php?page=sky_map"><i class="fa fa-sky fa-fw"></i> Sky Map</a>
+                <a href="index.php?page=sky_map"><i class="fa fa-star fa-fw"></i> Sky Map</a>
               </li>
 
           </ul>
