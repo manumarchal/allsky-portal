@@ -19,7 +19,8 @@ function DisplayLiveView(){
         <div class="panel-body">
 			<p><?php $status->showMessages(); ?></p>
 			<div id="live_container" style="background-color: black;">
-      			<img id="current" class="current" src="current/liveview-<?php echo $camera_settings_array['filename'] ?>" style="height:500; width:100%">
+      			<img id="current" class="current" src="current/liveview-<?php echo $camera_settings_array['filename'] ?>" 
+				style="height:500; width:100%">
   			</div>
         </div><!-- /.panel-body -->
       </div><!-- /.panel-default -->
