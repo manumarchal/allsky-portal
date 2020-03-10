@@ -4,7 +4,7 @@ var config = {
     location: "Sevenoaks",
     latitude: 51.28,
     longitude: -0.18,
-    az: 180,
+    az: 0,
     camera: "ASI120MC",
     computer: "Raspberry Pi 3",
     owner: "em",
