@@ -29,12 +29,12 @@
 <body ng-app="allsky" ng-controller="AppCtrl">
 	<div class="header">
 		<div class=title>{{title}}</div>
-		<div ng-show="forecast" class="forecast pull-right">
+<!--		<div ng-show="forecast" class="forecast pull-right">
 			<span>Aurora activity: </span>
 			<span class="forecast-day" ng-repeat="(key,val) in forecast">{{key}}:
 				<span ng-class="getScale(val)"
 					  title="{{val}}/9">{{getScale(val)}}</span> </span>
-		</div>
+		</div>-->
 		<div style="clear:both;"></div>
 	</div>
 	<div class="info animated slideInRight" ng-show="showInfo==true">
