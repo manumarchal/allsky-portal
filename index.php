@@ -110,7 +110,7 @@ $csrf_token = $_SESSION['csrf_token'];
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <meta property="og:title" content="All Sky Camera" />
+    <!--><meta property="og:title" content="All Sky Camera" />
     <meta property="og:type" content="image/jpeg" />
     <meta property="og:url" content="http://www.thomasjacquin/allsky/" />
     <meta property="og:image" content="http://www.thomasjacquin.com/allsky/image.jpg" />
@@ -146,7 +146,7 @@ $csrf_token = $_SESSION['csrf_token'];
           </button>
           <a class="navbar-brand" href="index.php">
 		<img src="img/allsky-logo.png">
-		<div class="navbar-title">AllSky Administration Panel</div></a>
+		<div class="navbar-title">AllSky Panel</div></a>
         </div>
         <!-- /.navbar-header -->
 
