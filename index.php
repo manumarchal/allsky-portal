@@ -154,49 +154,23 @@ $csrf_token = $_SESSION['csrf_token'];
         <div class="navbar-default sidebar" role="navigation">
           <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
-              <li>
-                <a href="index.php?page=live_view"><i class="fa fa-eye fa-fw"></i> Live View</a>
-              </li>
-              <li>
-                <a href="index.php?page=sky_map"><i class="fa fa-star fa-fw"></i> Sky Map</a>
-              </li>
-              <li>
-                <a href="index.php?page=wlan0_info"><i class="fa fa-tachometer-alt fa-fw"></i> Connection Status</a>
-              </li>
-			  <li>
-                <a href="index.php?page=camera_conf"><i class="fa fa-camera fa-fw"></i> Camera Settings</a>
-              </li>
-              <li>
-                <a href="index.php?page=wpa_conf"><i class="fa fa-signal fa-fw"></i> Configure Wifi</a>
-              </li>
-              <!--<li>
-                <a href="index.php?page=hostapd_conf"><i class="fa fa-dot-circle-o fa-fw"></i> Configure hotspot</a>
-              </li>
-              <li>
-                <a href="index.php?page=dhcpd_conf"><i class="fa fa-exchange fa-fw"></i> Configure DHCP</a>
-              </li>
+              <li><a href="index.php?page=live_view"><i class="fa fa-eye fa-fw"></i> Live</a></li>
+              <li><a href="index.php?page=sky_map"><i class="fa fa-star fa-fw"></i> Sky</a></li>
+	      	  <li><a href="index.php?page=list_days"><i class="fa fa-image fa-fw"></i> Images</a></li>
+			  <li><a href="index.php?page=camera_conf"><i class="fa fa-camera fa-fw"></i> Camera</a></li>
+              <li><a href="index.php?page=wlan0_info"><i class="fa fa-tachometer-alt fa-fw"></i> Connection</a></li>
+              <li><a href="index.php?page=wpa_conf"><i class="fa fa-signal fa-fw"></i> Wifi</a></li>
+              <li><a href="index.php?page=auth_conf"><i class="fa fa-lock fa-fw"></i> Password</a></li>
+              <li><a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a></li>
+			  <!--<li><span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span></li>
+              <li><a href="index.php?page=hostapd_conf"><i class="fa fa-dot-circle-o fa-fw"></i> Configure hotspot</a></li>
+              <li><a href="index.php?page=dhcpd_conf"><i class="fa fa-exchange fa-fw"></i> Configure DHCP</a></li>
               <?php if ( RASPI_OPENVPN_ENABLED ) : ?>
-              <li>
-                <a href="index.php?page=openvpn_conf"><i class="fa fa-lock fa-fw"></i> Configure OpenVPN</a>
-              </li>
+              <li><a href="index.php?page=openvpn_conf"><i class="fa fa-lock fa-fw"></i> Configure OpenVPN</a></li>
               <?php endif; ?>
               <?php if ( RASPI_TORPROXY_ENABLED ) : ?>
-              <li>
-                 <a href="index.php?page=torproxy_conf"><i class="fa fa-eye-slash fa-fw"></i> Configure TOR proxy</a>
-              </li>
+              <li><a href="index.php?page=torproxy_conf"><i class="fa fa-eye-slash fa-fw"></i> Configure TOR proxy</a></li>
               <?php endif; ?>-->
-              <li>
-                <a href="index.php?page=auth_conf"><i class="fa fa-lock fa-fw"></i> Change Password</a>
-              </li>
-	      	  <li>
-                <a href="index.php?page=list_days"><i class="fa fa-image fa-fw"></i> Images</a>
-              </li>
-              <li>
-                 <a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a>
-              </li>
-			  <li>
-                 <span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span>
-              </li>
           </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.navbar-default -->
@@ -214,6 +188,9 @@ $csrf_token = $_SESSION['csrf_token'];
       case "sky_map":
             DisplaySkyMap();
             break;
+  	  case "list_days":
+	  		ListDays();
+	        break;
 	  case "wlan0_info":
             DisplayDashboard();
             break;
@@ -228,9 +205,6 @@ $csrf_token = $_SESSION['csrf_token'];
             break;
       case "system_info":
             DisplaySystem();
-            break;
-	  case "list_days":
-            ListDays();
             break;
 	  case "list_images":
             ListImages();
