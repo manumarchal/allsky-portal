@@ -272,9 +272,9 @@ $csrf_token = $_SESSION['csrf_token'];
 			getImage();
 		}, <?php echo $camera_settings_array["exposure"] ?>);
 
-		// Inititalize theme to light
+		// Inititalize theme to dark
 		if (!localStorage.getItem("theme")) {
-			localStorage.setItem("theme", "light")
+			localStorage.setItem("theme", "dark")
 		}
 
 		$("body").attr("class", localStorage.getItem("theme"));
