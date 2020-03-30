@@ -12,15 +12,11 @@
 
 		$files = array();
 		if ($handle = opendir('.')) {
-
 			while (false !== ($entry = readdir($handle))) {
-
 				if (strpos($entry, 'jpg') !== false) {
-
 					$files[] = $entry;
 				}
 			}
-
 			closedir($handle);
 		}
 

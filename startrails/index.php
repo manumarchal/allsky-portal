@@ -12,23 +12,19 @@
 
         $files = array();
 		if ($handle = opendir('.')) {
-
 			while (false !== ($entry = readdir($handle))) {
-
 				if (strpos($entry, 'jpg') !== false) {
-
 					$files[] = $entry;
 				}
 			}
-
 			closedir($handle);
 		}
 
 		asort($files);
 	
-	if (!is_dir('thumbnails')) {
+		if (!is_dir('thumbnails')) {
 	        mkdir('thumbnails', 0755);
-	}
+		}
 
         echo "<a class='back-button' href='..'><i class='fa fa-chevron-left'></i>Back to Live View</a>";
 		echo "<div class=archived-videos>";
