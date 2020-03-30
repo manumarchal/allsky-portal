@@ -145,10 +145,12 @@ $csrf_token = $_SESSION['csrf_token'];
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.php">
-		<img src="img/allsky-logo.png">
-		<div class="navbar-title">AllSky Panel | <a class="navbar-title" href="index.html"> Live</a></div>
-        </div>
-        <!-- /.navbar-header -->
+			  <img src="img/allsky-logo.png">
+			  <div class="navbar-title">AllSky Panel |</div>
+		  </a>
+		  <a class="navbar-brand" href="index.html"> Live</a>
+		</div>
+		<!-- /.navbar-header -->
 
         <!-- Navigation -->
         <div class="navbar-default sidebar" role="navigation">
