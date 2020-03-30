@@ -146,9 +146,8 @@ $csrf_token = $_SESSION['csrf_token'];
           </button>
           <a class="navbar-brand" href="index.php">
 			  <img src="img/allsky-logo.png">
-			  <div class="navbar-title">AllSky Panel |</div>
+			  <div class="navbar-title">Panel</div>
 		  </a>
-		  <a class="navbar-brand" href="index.html"> Live</a>
 		</div>
 		<!-- /.navbar-header -->
 
@@ -164,6 +163,7 @@ $csrf_token = $_SESSION['csrf_token'];
               <li><a href="index.php?page=wpa_conf"><i class="fa fa-signal fa-fw"></i> Wifi</a></li>
               <li><a href="index.php?page=auth_conf"><i class="fa fa-lock fa-fw"></i> Password</a></li>
               <li><a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a></li>
+              <li><a href="index.html"><i class="fa fa-spin fa-spinner fa-fw"></i> Live</a></li>
 			  <!--<li><span onclick="switchTheme()"><i class="fa fa-moon fa-fw"></i> Light/Dark mode</span></li>
               <li><a href="index.php?page=hostapd_conf"><i class="fa fa-dot-circle-o fa-fw"></i> Configure hotspot</a></li>
               <li><a href="index.php?page=dhcpd_conf"><i class="fa fa-exchange fa-fw"></i> Configure DHCP</a></li>
