@@ -26,7 +26,7 @@
 
 
 
-		echo "<a class='back-button' href='..'><i class='fa fa-chevron-left'></i>Back to Live View</a>";
+		echo "<a class='back-button' href='../index.html'><i class='fa fa-chevron-left'></i>Back to Live View</a>";
 		echo "<div class=archived-videos>";
 
 		foreach ($files as $file) {
